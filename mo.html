@@ -12,26 +12,79 @@
 </script>
   <title>welcome to sumin's web</title>
   <meta charset="utf-8">
+  <style>
+  li{
+    color:pink;
+  }
+  a{
+    color:pink;
+    text-decoration:none;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 400px 1fr;
+  }
+  h1{
+    text-align: center;
+    border-bottom:2px solid #BECDFF;
+    padding: 8px; /*상자사이의 간격만들기*/
+    margin: 2px; /*상자바깥에 간격만들기*/
+  }
+  #grid h3{
+    padding-left:15px;
+    padding-right:0px;
+    margin-right: 0px;
+    margin-bottom:0px;
+    margin-top:0px;
+    border-right: 2px solid #BECDFF;
+  }
+  #article{
+    padding: 0px;
+    color:#696969;
+    padding-left: 20px;
+    margin:0px;
+  }
+  h2{
+    padding-left:20px;
+    width:378px;
+    border-right: 2px solid #BECDFF;
+    margin:0px;
+  }
+  body{
+    margin:0px;
+  }
+  span {
+      color:#BECDFF;
+      font-size:20px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="https://www.ghibli.jp" target="_blank">Studio Ghibli</a></h1>
-  <h2><a href="index.html">movie</a></h2>
-  <li><a href="Sen.html"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
-  <li><a href="howl.html"><strong>Howl's Moving Castle</strong></a></li>
-  <li><a href="mo.html"><strong>The Princess Mononoke</strong></a></li>
-  <P> <strong>Princess Mononoke (Japanese: もののけ姫, Hepburn: Mononoke-hime)</strong> is a 1997 Japanese epic fantasy film written and directed by Hayao Miyazaki,
+  <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오">Studio Ghibli</a></h1>
+  <h2><a href="index.html" title="영화">movie</a></h2>
+  <div id="grid">
+<h3>
+  <li><a href="Sen.html" title="센과 치히로의 행방불명"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
+  <li><a href="howl.html" title="하울의 움직이는 성"><strong>Howl's Moving Castle</strong></a></li>
+  <li><a href="mo.html" style="color:lightskyblue" title="모노노케 히메"><strong>The Princess Mononoke</strong></a></li>
+</h3>
+<div id="article">
+  <span><strong>Princess Mononoke (Japanese: もののけ姫, Hepburn: Mononoke-hime)</strong></span>
+  <P><strong>Princess Mononoke (Japanese: もののけ姫, Hepburn: Mononoke-hime)</strong> is a 1997 Japanese epic fantasy film written and directed by Hayao Miyazaki,
     animated by Studio Ghibli for Tokuma Shoten, Nippon Television Network and Dentsu, and distributed by Toho. The film stars the voices of Yōji Matsuda,
     Yuriko Ishida, Yūko Tanaka, Kaoru Kobayashi, Masahiko Nishimura, Tsunehiko Kamijo, Akihiro Miwa, Mitsuko Mori and Hisaya Morishige.
     Princess Mononoke is set in the late Muromachi period of Japan (approximately 1336 to 1573 CE), but it includes fantasy elements.
     The story follows a young Emishi prince named Ashitaka, and his involvement in a struggle between the gods of a forest and the humans who consume
     its resources. The term Mononoke (物の怪), or もののけ, is not a name, but a Japanese word for supernatural, shape-shifting beings that
     possess people and cause suffering, disease, or death.</p>
-<img src="mo007.jpg" width="50%">
+<img src="mo007.jpg" width="98%">
 <p> The film was released in Japan on July 12, 1997, and in the United States on October 29, 1999. It was a critical and commercial blockbuster,
   becoming the highest-grossing film in Japan of 1997, and also held Japan's box office record for domestic films until 2001's Spirited Away,
   another Miyazaki film. It was dubbed into English with a script by Neil Gaiman, and initially distributed in North America by Miramax,
   where it sold well on DVD and video, despite a poor box office performance; however, it greatly increased Ghibli's popularity and
   influence outside Japan.</p>
-<img src="mo2.jpg" width="50%">
+<img src="mo2.jpg" width="98%">
+</div>
+</div>
 </body>
 </html>

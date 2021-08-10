@@ -12,15 +12,65 @@
 </script>
   <title>welcome to sumin's web</title>
   <meta charset="utf-8">
+  <style>
+  li{
+    color:pink;
+  }
+  a{
+    color:pink;
+    text-decoration:none;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 400px 1fr;
+  }
+  h1{
+    text-align: center;
+    border-bottom:2px solid #BECDFF;
+    padding: 8px; /*상자사이의 간격만들기*/
+    margin: 2px; /*상자바깥에 간격만들기*/
+  }
+  #grid h3{
+    padding-left:15px;
+    padding-right:0px;
+    margin-right: 0px;
+    margin-bottom:0px;
+    margin-top:0px;
+    border-right: 2px solid #BECDFF;
+  }
+  #article{
+    padding: 0px;
+    color:#696969;
+    padding-left: 20px;
+  }
+  h2{
+    padding-left:20px;
+    width:378px;
+    border-right: 2px solid #BECDFF;
+    margin:0px;
+  }
+  body{
+    margin:0px;
+  }
+  span {
+      color:#BECDFF;
+      font-size:19px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="https://www.ghibli.jp" target="_blank">Studio Ghibli</a></h1>
-  <h2><a href="index.html">movie</a></h2>
-  <li><a href="Sen.html"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
-  <li><a href="howl.html"><strong>Howl's Moving Castle</strong></a></li>
-  <li><a href="mo.html"><strong>The Princess Mononoke</strong></a></li>
-  <img src="ch005.jpg" width="50%">
-  <P> <strong>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</strong> is a 2001 Japanese animated
+  <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오">Studio Ghibli</a></h1>
+  <h2><a href="index.html" title="영화">movie</a></h2>
+  <div id="grid">
+<h3>
+  <li><a href="Sen.html" style="color:lightskyblue" title="센과 치히로의 행방불명"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
+  <li><a href="howl.html" title="하울의 움직이는 성"><strong>Howl's Moving Castle</strong></a></li>
+  <li><a href="mo.html" title="모노노케 히메"><strong>The Princess Mononoke</strong></a></li>
+ </h3>
+ <div id="article">
+  <img src="ch005.jpg" width="98%">
+  <span><strong>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</strong></span>
+  <p><strong>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</strong> is a 2001 Japanese animated
       fantasy film written and directed by Hayao Miyazaki, animated by Studio Ghibli for Tokuma Shoten, Nippon Television Network, Dentsu, Buena Vista Home
       Entertainment, Tohokushinsha Film, and Mitsubishi. The film stars Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takeshi Naito, Yasuko Sawaguchi,
       Tsunehiko Kamijō, Takehiko Ono, and Bunta Sugawara. Spirited Away tells the story of Chihiro Ogino (Hiiragi), a 10-year-old girl who, while moving
@@ -36,14 +86,15 @@
       films of the 21st century as well as one of the greatest animated films ever made. Accordingly, it became the most successful and highest-grossing
       film in Japanese history with a total of ¥31.68 billion ($305 million). It held the record for 19 years until it was surpassed by Demon Slayer:
       Kimetsu no Yaiba the Movie: Mugen Train in 2020.</p>
-      <img src="chihiro1.jpg" width="50%">
-<p> It won the Academy Award for Best Animated Feature at the 75th Academy Awards, making it the first and only hand-drawn and non-English-language
-  animated film to win the award. It was the co-recipient of the Golden Bear at the 2002 Berlin International Film Festival (shared with Bloody Sunday),
-  and is in the top 10 on the British Film Institute's list of "Top 50 films for children up to the age of 14". In 2016, it was voted the 4th-best film
-  of the 21st century by the BBC, as picked by 177 film critics from around the world, making it the highest-ranking animated film on the list. In 2017,
-  it was also named the second "Best Film...of the 21st Century So Far" by The New York Times.</p>
-  <img src="sen1.gif" width="50%">
-  <iframe width="650" height="425" src="https://www.youtube.com/embed/i-Regv99RlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+      <img src="chihiro1.jpg" width="98%">
+      <p> It won the Academy Award for Best Animated Feature at the 75th Academy Awards, making it the first and only hand-drawn and non-English-language
+        animated film to win the award. It was the co-recipient of the Golden Bear at the 2002 Berlin International Film Festival (shared with Bloody Sunday),
+        and is in the top 10 on the British Film Institute's list of "Top 50 films for children up to the age of 14". In 2016, it was voted the 4th-best film
+        of the 21st century by the BBC, as picked by 177 film critics from around the world, making it the highest-ranking animated film on the list. In 2017,
+        it was also named the second "Best Film...of the 21st Century So Far" by The New York Times.</p>
+        <img src="sen1.gif" width="49%">
+        <iframe width="49%" height="305px" src="https://www.youtube.com/embed/i-Regv99RlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</div>
 </body>
 </html>

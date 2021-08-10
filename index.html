@@ -12,30 +12,85 @@
 </script>
   <title>welcome to sumin's web</title>
   <meta charset="utf-8">
+  <style>
+  li{
+    color:pink;
+  }
+  a{
+    color:pink;
+    text-decoration:none;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 400px 1fr;
+  }
+  h1{
+    text-align: center;
+    border-bottom:2px solid #BECDFF;
+    padding: 8px; /*상자사이의 간격만들기*/
+    margin: 2px; /*상자바깥에 간격만들기*/
+  }
+  #grid h3{
+    padding-left:15px;
+    padding-right:0px;
+    margin-right: 0px;
+    margin-bottom:0px;
+    margin-top:0px;
+    border-right: 2px solid #BECDFF;
+  }
+  #article{
+    padding:0px;
+    padding-left: 20px;
+    color:#696969;
+  }
+  h2{
+    padding-left:20px;
+    width:378px;
+    border-right: 2px solid #BECDFF;
+    margin-right: 0px;
+    margin-bottom:0px;
+    margin-top:0px;
+  }
+  body{
+    margin:0px;
+  }
+  span {
+      padding-top:0px;
+      color:#BECDFF;
+      font-size: 20px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="https://www.ghibli.jp" target="_blank">Studio Ghibli</a></h1>
-  <h2><a href="index.html">movie</a></h2>
-  <li><a href="Sen.html"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
-  <li><a href="howl.html"><strong>Howl's Moving Castle</strong></a></li>
-  <li><a href="mo.html"><strong>The Princess Mononoke</strong></a></li>
-<P> <strong>Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</strong> is a Japanese animation film studio headquartered
-      in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short subjects, television commercials,
-      and one television film. The studio's mascot and most recognizable symbol is a character named Totoro, who is a giant cat-like spirit from the 1988
-      anime film My Neighbor Totoro. Among Studio Ghibli's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008).
-      The studio was founded on June 15, 1985 by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance
-      of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several video
-      games. Five of the studio's films are among the 10 highest-grossing anime feature films made in Japan, with Spirited Away being number two,
-      grossing over US$380 million at the worldwide box office. Many of their works have won the Animage Grand Prix award. Four have won the Japan Academy
-      Prize for Animation of the Year. Five of the studio's films have received Academy Award nominations. Spirited Away won the 2002 Golden Bear and the
-      2003 Academy Award for Best Animated Feature Film.
-      On August 3, 2014, Studio Ghibli temporarily suspended production, following the retirement of Miyazaki. In February 2017, Suzuki announced that
-      Miyazaki had come out of retirement again to direct a new feature film entitled How Do You Live?.</p>
-<p> The name "Ghibli" was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind
-  (قبلي, 'ghiblī'), the idea being the studio would "blow a new wind through the anime industry". It also refers to an Italian aircraft,
-  the Caproni Ca.309. Although the Italian word would be more accurately transliterated as 'Giburi' (ギブリ), with a hard g sound, the studio is
-  romanised in Japanese as 'Jiburi' (ジブリ, [dʑiꜜbɯɾi] (About this soundlisten)).</p>
-  <img src="omake1.jpg" width="50%">
+  <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오" style="color:#6495ED;text-decoration:none">Studio Ghibli</a></h1>
+  <h2><a href="index.html"style="color:lightskyblue" title="영화" class="saw">movie</a></h2>
+<div id="grid">
+  <h3>
+    <li><a href="Sen.html" title="센과 치히로의 행방불명">The Spiriting Away Of Sen And Chihiro</a></li>
+    <li><a href="howl.html" title="하울의 움직이는 성">Howl's Moving Castle</a></li>
+    <li><a href="mo.html" title="모노노케 히메">The Princess Mononoke</a></li>
+  </h3>
+  <div id="article">
+    <span><strong>Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</strong></span>
+    <p><strong>  Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</strong> is a Japanese animation film studio headquartered
+        in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short subjects, television commercials,
+        and one television film. The studio's mascot and most recognizable symbol is a character named Totoro, who is a giant cat-like spirit from the 1988
+        anime film My Neighbor Totoro. Among Studio Ghibli's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008).
+        The studio was founded on June 15, 1985 by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance
+        of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several video
+        games. Five of the studio's films are among the 10 highest-grossing anime feature films made in Japan, with Spirited Away being number two,
+        grossing over US$380 million at the worldwide box office. Many of their works have won the Animage Grand Prix award. Four have won the Japan Academy
+        Prize for Animation of the Year. Five of the studio's films have received Academy Award nominations. Spirited Away won the 2002 Golden Bear and the
+        2003 Academy Award for Best Animated Feature Film.
+        On August 3, 2014, Studio Ghibli temporarily suspended production, following the retirement of Miyazaki. In February 2017, Suzuki announced that
+        Miyazaki had come out of retirement again to direct a new feature film entitled How Do You Live?.</p>
+        <p> The name "Ghibli" was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind
+          (قبلي, 'ghiblī'), the idea being the studio would "blow a new wind through the anime industry". It also refers to an Italian aircraft,
+          the Caproni Ca.309. Although the Italian word would be more accurately transliterated as 'Giburi' (ギブリ), with a hard g sound, the studio is
+          romanised in Japanese as 'Jiburi' (ジブリ, [dʑiꜜbɯɾi] (About this soundlisten)).</p>
+          <img src="omake1.jpg" width="98%">
+      </div>
+</div>
   <div id="disqus_thread"></div>
 <script>
     /**
