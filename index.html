@@ -12,76 +12,20 @@
 </script>
   <title>welcome to sumin's web</title>
   <meta charset="utf-8">
-  <style>
-  li{
-    color:pink;
-  }
-  a{
-    color:pink;
-    text-decoration:none;
-  }
-  #grid{
-    display:grid;
-    grid-template-columns: 400px 1fr;
-  }
-  h1{
-    text-align: center;
-    border-bottom:2px solid #BECDFF;
-    padding: 8px; /*상자사이의 간격만들기*/
-    margin: 2px; /*상자바깥에 간격만들기*/
-  }
-  #grid h3{
-    padding-left:15px;
-    padding-right:0px;
-    margin-right: 0px;
-    margin-bottom:0px;
-    margin-top:0px;
-    border-right: 2px solid #BECDFF;
-  }
-  #article{
-    padding:0px;
-    padding-left: 20px;
-    color:#696969;
-  }
-  h2{
-    padding-left:20px;
-    width:378px;
-    border-right: 2px solid #BECDFF;
-    margin-right: 0px;
-    margin-bottom:0px;
-    margin-top:0px;
-  }
-  body{
-    margin:0px;
-  }
-  span {
-      padding-top:0px;
-      color:#BECDFF;
-      font-size: 20px;
-  }
-  @media(max-width:800px){
-    #grid{
-      display:block;
-    }
-    h2{
-      padding-bottom: 10px;
-      border-right:none;
-    }
-    #grid h3{
-      border-right: none;
-      padding-bottom: 20px;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').sytle.color='black';
-  ">
-  <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').sytle.color='white';
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = '#696969';
+      this.value = 'night';
+    }
   ">
   <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오" style="color:#6495ED;text-decoration:none">Studio Ghibli</a></h1>
   <h2><a href="index.html"style="color:lightskyblue" title="영화" class="saw">movie</a></h2>

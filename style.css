@@ -1,0 +1,58 @@
+li{
+  color:pink;
+}
+a{
+  color:pink;
+  text-decoration:none;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 400px 1fr;
+}
+h1{
+  text-align: center;
+  border-bottom:2px solid #BECDFF;
+  padding: 8px; /*상자사이의 간격만들기*/
+  margin: 2px; /*상자바깥에 간격만들기*/
+}
+#grid h3{
+  padding-left:15px;
+  padding-right:0px;
+  margin-right: 0px;
+  margin-bottom:0px;
+  margin-top:0px;
+  border-right: 2px solid #BECDFF;
+}
+#article{
+  padding:0px;
+  padding-left: 20px;
+}
+h2{
+  padding-left:20px;
+  width:378px;
+  border-right: 2px solid #BECDFF;
+  margin-right: 0px;
+  margin-bottom:0px;
+  margin-top:0px;
+}
+body{
+  margin:0px;
+}
+span {
+    padding-top:0px;
+    color:#BECDFF;
+    font-size: 20px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  h2{
+    padding-bottom: 10px;
+    border-right:none;
+  }
+  #grid h3{
+    border-right: none;
+    padding-bottom: 20px;
+  }
+}
