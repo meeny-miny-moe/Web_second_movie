@@ -1,3 +1,6 @@
+#article strong{
+  color:#BECDFF;
+}
 li{
   color:pink;
 }
@@ -39,8 +42,9 @@ body{
   margin:0px;
 }
 span {
+    font-weight: bold;
     padding-top:0px;
-    color:#BECDFF;
+    color:#6495ED;
     font-size: 20px;
 }
 @media(max-width:800px){

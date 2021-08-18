@@ -16,27 +16,41 @@
 </head>
 <body style="color:#696969">
   <input id="night_day" type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day';
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = '#696969';
-      this.value = 'night';
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist=document.querySelectorAll('strong');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='PowderBlue';
+      i+=1;
     }
-  ">
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = '#696969';
+    this.value = 'night';
+
+    var alist=document.querySelectorAll('strong');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='#BECDFF';
+      i+=1;
+    }
+  }
+">
   <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오">Studio Ghibli</a></h1>
   <h2><a href="index.html" title="영화">movie</a></h2>
   <div id="grid">
     <h3>
-     <li><a href="Sen.html" ><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
-     <li><a href="howl.html" style="color:lightskyblue"><strong>Howl's Moving Castle</strong></a></li>
-     <li><a href="mo.html"><strong>The Princess Mononoke</strong></a></li>
+     <li><a href="Sen.html" >The Spiriting Away Of Sen And Chihiro</a></li>
+     <li><a href="howl.html" style="color:lightskyblue">Howl's Moving Castle</a></li>
+     <li><a href="mo.html">The Princess Mononoke</a></li>
    </h3>
   <div id="article">
-    <span><strong>Howl's Moving Castle (Japanese: ハウルの動く城, Hepburn: Hauru no Ugoku Shiro)</strong></span>
+    <span>Howl's Moving Castle (Japanese: ハウルの動く城, Hepburn: Hauru no Ugoku Shiro)</span>
   <P><strong>Howl's Moving Castle (Japanese: ハウルの動く城, Hepburn: Hauru no Ugoku Shiro)</strong> is a 2004 Japanese animated fantasy film written and directed by
     Hayao Miyazaki. The film is loosely based on the 1986 novel of the same name by British author Diana Wynne Jones. The film was produced by Toshio
     Suzuki, animated by Studio Ghibli and distributed by Toho. The Japanese voice cast featured Chieko Baisho and Takuya Kimura, while the English dub

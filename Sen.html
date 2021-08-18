@@ -16,28 +16,42 @@
 </head>
 <body style="color:#696969">
   <input id="night_day" type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day';
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = '#696969';
-      this.value = 'night';
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist=document.querySelectorAll('strong');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='PowderBlue';
+      i+=1;
     }
-  ">
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = '#696969';
+    this.value = 'night';
+
+    var alist=document.querySelectorAll('strong');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='#BECDFF';
+      i+=1;
+    }
+  }
+">
   <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오">Studio Ghibli</a></h1>
   <h2><a href="index.html" title="영화">movie</a></h2>
   <div id="grid">
 <h3>
-  <li><a href="Sen.html" style="color:lightskyblue" title="센과 치히로의 행방불명"><strong>The Spiriting Away Of Sen And Chihiro</strong></a></li>
-  <li><a href="howl.html" title="하울의 움직이는 성"><strong>Howl's Moving Castle</strong></a></li>
-  <li><a href="mo.html" title="모노노케 히메"><strong>The Princess Mononoke</strong></a></li>
+  <li><a href="Sen.html" style="color:lightskyblue" title="센과 치히로의 행방불명">The Spiriting Away Of Sen And Chihiro</a></li>
+  <li><a href="howl.html" title="하울의 움직이는 성">Howl's Moving Castle</a></li>
+  <li><a href="mo.html" title="모노노케 히메">The Princess Mononoke</a></li>
  </h3>
  <div id="article">
   <img src="ch005.jpg" width="98%">
-  <span><strong>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</strong></span>
+  <span>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</span>
   <p><strong>Spirited Away (Japanese: 千と千尋の神隠し, Hepburn: Sen to Chihiro no Kamikakushi, 'Sen and Chihiro's Spiriting Away')</strong> is a 2001 Japanese animated
       fantasy film written and directed by Hayao Miyazaki, animated by Studio Ghibli for Tokuma Shoten, Nippon Television Network, Dentsu, Buena Vista Home
       Entertainment, Tohokushinsha Film, and Mitsubishi. The film stars Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takeshi Naito, Yasuko Sawaguchi,
