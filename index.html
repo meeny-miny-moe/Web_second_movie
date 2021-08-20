@@ -15,32 +15,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="color:#696969">
-  <input id="night_day" type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day';
-
-      var alist=document.querySelectorAll('strong');
-      var i=0;
-      while(i<alist.length){
-        alist[i].style.color='PowderBlue';
-        i+=1;
-      }
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = '#696969';
-      this.value = 'night';
-
-      var alist=document.querySelectorAll('strong');
-      var i=0;
-      while(i<alist.length){
-        alist[i].style.color='#BECDFF';
-        i+=1;
-      }
-    }
-  ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"> </script>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
   <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오";text-decoration:"none">Studio Ghibli</a></h1>
   <h2><a href="index.html"style="color:lightskyblue" title="영화" class="saw">movie</a></h2>
 <div id="grid">
