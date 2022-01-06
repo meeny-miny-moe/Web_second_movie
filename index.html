@@ -15,12 +15,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="color:#696969">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="colors.js"> </script>
-    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">
-  <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오";text-decoration:"none">Studio Ghibli</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = '#696969';
+      this.value = 'night';
+    }
+  ">
+  <h1><a href="https://www.ghibli.jp" target="_blank" title="지브리 스튜디오" style="color:#6495ED;text-decoration:none">Studio Ghibli</a></h1>
   <h2><a href="index.html"style="color:lightskyblue" title="영화" class="saw">movie</a></h2>
 <div id="grid">
   <h3>
@@ -29,7 +36,7 @@
     <li><a href="mo.html" title="모노노케 히메">The Princess Mononoke</a></li>
   </h3>
   <div id="article">
-    <span>Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</span>
+    <span><strong>Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</strong></span>
     <p><strong>  Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi)</strong> is a Japanese animation film studio headquartered
         in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short subjects, television commercials,
         and one television film. The studio's mascot and most recognizable symbol is a character named Totoro, who is a giant cat-like spirit from the 1988
@@ -39,10 +46,10 @@
         games. Five of the studio's films are among the 10 highest-grossing anime feature films made in Japan, with Spirited Away being number two,
         grossing over US$380 million at the worldwide box office. Many of their works have won the Animage Grand Prix award. Four have won the Japan Academy
         Prize for Animation of the Year. Five of the studio's films have received Academy Award nominations. Spirited Away won the 2002 Golden Bear and the
-        2003 Academy Award for Best Animated Feature Film.</p>
-        <p>On August 3, 2014, <strong>Studio Ghibli</strong> temporarily suspended production, following the retirement of Miyazaki. In February 2017, Suzuki announced that
+        2003 Academy Award for Best Animated Feature Film.
+        On August 3, 2014, Studio Ghibli temporarily suspended production, following the retirement of Miyazaki. In February 2017, Suzuki announced that
         Miyazaki had come out of retirement again to direct a new feature film entitled How Do You Live?.</p>
-        <p> The name <strong>"Ghibli"</strong> was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind
+        <p> The name "Ghibli" was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind
           (قبلي, 'ghiblī'), the idea being the studio would "blow a new wind through the anime industry". It also refers to an Italian aircraft,
           the Caproni Ca.309. Although the Italian word would be more accurately transliterated as 'Giburi' (ギブリ), with a hard g sound, the studio is
           romanised in Japanese as 'Jiburi' (ジブリ, [dʑiꜜbɯɾi] (About this soundlisten)).</p>
